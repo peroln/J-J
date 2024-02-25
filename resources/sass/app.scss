@@ -6,3 +6,82 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+
+a.nav-link, a.navbar-brand {
+    font-family: 'Inria Serif';
+    letter-spacing: 0em;
+    text-align: center;
+    font-size: 48px;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+
+.top-left {
+    position: absolute;
+    top: 25%;
+    left: 6%;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 10%;
+    right: 8%;
+}
+
+.bottom-right {
+    h1 {
+        font-family: 'Inria Serif';
+        letter-spacing: 0em;
+        text-align: right;
+        font-size: 100px;
+        font-size: 4vw;
+        font-weight: 700;
+        line-height: 120px;
+        line-height: 4.5vw;
+    }
+}
+
+.top-left {
+    h1 {
+        font-family: 'Inria Serif';
+        color: white;
+        font-size: 114px;
+        font-size: 5vw;
+        line-height: 121px;
+        line-height: 6vw;
+        font-weight: 700;
+    }
+}
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #c7a9e8;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to top, rgba(122, 28, 224, 0), rgba(37, 117, 252, 0.9));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to top, rgba(122, 28, 224, 0), rgba(37, 117, 252, 0.9));
+}
+
+@include media-breakpoint-down(md) {
+    .canvas-background{
+        /* fallback for old browsers */
+        background: #c7a9e8;
+
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right, rgba(249, 247, 250, 0.5), rgba(37, 117, 252, 1));
+
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, rgba(249, 247, 250, 0.5), rgba(37, 117, 252, 1));
+    }
+    a.nav-link, a.navbar-brand {
+        font-size: 20px;
+        font-size: 4vw;
+        font-weight: 700;
+        line-height: 36px;
+        line-height: 6vw;
+    }
+}
