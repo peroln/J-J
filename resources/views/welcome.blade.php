@@ -62,15 +62,47 @@
         <div class="top-left"><h1 class="p3">When the grass gets growing </br> we get mowing</h1></div>
         <div class="bottom-right"><h1 class="p3">Gardening </br> services</h1></div>
     </div>
-    <main class="container">
-        <div class="container py-4 px-3 mx-auto">
-            <h1>Hello, Bootstrap and Vite!</h1>
-            <button class="btn btn-primary">Primary button</button>
-            <div class="card-body text-center">
-
+    <div class="main-content">
+        <div class="d-flex align-items-start flex-column">
+            <div class="card first-element-main-content rounded-end-4">
+                <div class="card-body p-md-5">
+                    <h1 class="card-title">Why Chose Us</h1>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                        With supporting text below as a natural lead-in to additional content.
+                        With supporting text below as a natural lead-in to additional content.</p>
+                </div>
             </div>
         </div>
-    </main>
+        <div class="mt-5 d-flex align-items-end flex-column ">
+            <div class="card  second-element-main-content rounded-start-4">
+                <div class="card-body p-md-5">
+                    <h1 class="card-title">What We Do</h1>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                        With supporting text below as a natural lead-in to additional content.
+                        With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<footer class="p-3">
+    <div class="card-body p-md-5">
+        <h1 class="card-title">Get In Touch</h1>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.
+            With supporting text below as a natural lead-in to additional content.
+            With supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="hstack gap-3 mt-3 p-3">
+        <div class="copyright"><p>&copy; 2024 My Web Page. All rights reserved.</p></div>
+        <div class="ms-auto">
+            <address class="">
+                F28YP78 Lios Mor, apt.14, Newport, Co.Mayo Ireland<br>
+                Phone: +353-(87) 647-0733<br>
+                Email: peretjatkool@gmail.com
+            </address>
+        </div>
+
+    </div>
+</footer>
 </body>
 </html>
