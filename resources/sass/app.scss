@@ -91,8 +91,7 @@ select {
 // Finish reset styles
 
 
-
-a.nav-link, a.navbar-brand {
+a.nav-link{
     font-family: 'Inria Serif';
     letter-spacing: 0em;
     text-align: center;
@@ -152,26 +151,32 @@ a.nav-link, a.navbar-brand {
 
 .main-content {
     background-color: #BBC2A8;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 7vw 0;
+
 }
 
-.first-element-main-content, .second-element-main-content {
+.first-element-main-content, .second-element-main-content, .third-element-main-content {
     width: 70%;
 }
-.first-element-main-content {
+
+.first-element-main-content, .third-element-main-content {
     background-color: #415974;
 }
 
 .second-element-main-content {
     background-color: #326271;
+    margin-bottom: 7vw;
 }
 
-footer{
+.first-wrap {
+    margin-bottom: 7vw;
+}
+
+footer {
     background-color: #273C53;
 }
 
-.first-element-main-content, .second-element-main-content, footer {
+.first-element-main-content, .second-element-main-content, .third-element-main-content, footer {
     h1 {
         font-family: Inria Serif;
         font-size: 90px;
@@ -181,7 +186,8 @@ footer{
         line-height: 4.5vw;
         letter-spacing: 0em;
     }
-    p{
+
+    p {
         font-family: Inria Serif;
         font-size: 2.2vw;
         font-weight: 700;
@@ -190,7 +196,8 @@ footer{
         letter-spacing: 0em;
         text-align: left;
     }
-    address{
+
+    address {
         font-family: Inria Serif;
         font-size: 1.2vw;
         font-weight: 100;
@@ -200,7 +207,8 @@ footer{
         text-align: left;
     }
 }
-footer .copyright p{
+
+footer .copyright p {
     font-family: Inria Serif;
     font-size: 1.2vw;
     font-weight: 150;
@@ -208,6 +216,20 @@ footer .copyright p{
     line-height: 1.3vw;
     letter-spacing: 0em;
     text-align: left;
+}
+
+.navbar-brand {
+        font-size: 2vw;
+        font-family: 'Inria Serif';
+        letter-spacing: 0em;
+        text-align: center;
+        font-weight: 700;
+    p{
+        font-size: 1vw;
+    }
+    img {
+        width: 3vw;
+    }
 }
 
 @include media-breakpoint-down(md) {
@@ -221,14 +243,14 @@ footer .copyright p{
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         background: linear-gradient(to right, rgba(249, 247, 250, 0.5), rgba(37, 117, 252, 1));
     }
-    a.nav-link, a.navbar-brand {
+    a.nav-link {
         font-size: 20px;
         font-size: 4vw;
         font-weight: 700;
         line-height: 36px;
         line-height: 6vw;
     }
-    .first-element-main-content, .second-element-main-content, footer {
+    .first-element-main-content, .second-element-main-content, .third-element-main-content, footer {
         h1 {
             font-size: 90px;
             font-size: 4vw;
@@ -237,7 +259,8 @@ footer .copyright p{
             line-height: 4.5vw;
             letter-spacing: 0em;
         }
-        p{
+
+        p {
             font-size: 3vw;
             font-weight: 700;
             line-height: 58px;
@@ -246,8 +269,11 @@ footer .copyright p{
             text-align: left;
         }
     }
-    .main-content {
-        padding-top: 50px;
-        padding-bottom: 50px;
+    .navbar-brand {
+        img {
+            width: 3vw;
+        }
     }
+
 }
+
