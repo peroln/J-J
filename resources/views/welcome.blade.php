@@ -21,7 +21,7 @@
 
 <div id="app">
     <div class="container-fluid p-0 position-relative">
-        <img src="{{Vite::asset('storage/app/images/main_bg_image.jpeg')}}" class="img-fluid">
+        <img src="{{url('/images/main_bg_image.jpeg')}}" class="img-fluid">
         @include("layouts.menu")
         <div class="top-left"><h1 class="p3">When the grass gets growing </br> we get mowing</h1></div>
         <div class="bottom-right"><h1 class="p3">Gardening </br> services</h1></div>

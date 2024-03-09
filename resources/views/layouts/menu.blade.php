@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md gradient-custom fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand ms-md-5 mt-md-3" href="/">
-            <img src="{{Vite::asset('storage/app/images/farmer.png')}}" alt="J&J" class="mx-auto">
+            <img src="{{url('/images/farmer.png')}}" alt="J&J" class="mx-auto">
             J&J
             <p>English Gardener</p>
         </a>
