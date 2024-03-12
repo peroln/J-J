@@ -91,7 +91,7 @@ select {
 // Finish reset styles
 
 
-a.nav-link{
+a.nav-link {
     font-family: 'Inria Serif';
     letter-spacing: 0em;
     text-align: center;
@@ -153,12 +153,14 @@ a.nav-link{
     background-color: #BBC2A8;
     background-image: url("/public/images/grass-background.jpg");
     background-repeat: repeat;
-
+    background-size: cover;
 }
-.mask{
-    background-color:   rgba(164, 178, 168, 0.6);
+
+.mask {
+    background-color: rgba(164, 178, 168, 0.6);
     padding: 7vw 0;
 }
+
 .first-element-main-content, .second-element-main-content, .third-element-main-content {
     width: 70%;
     color: white;
@@ -224,14 +226,16 @@ footer .copyright p {
 }
 
 .navbar-brand {
-        font-size: 2vw;
-        font-family: 'Inria Serif';
-        letter-spacing: 0em;
-        text-align: center;
-        font-weight: 700;
-    p{
+    font-size: 2vw;
+    font-family: 'Inria Serif';
+    letter-spacing: 0em;
+    text-align: center;
+    font-weight: 700;
+
+    p {
         font-size: 1vw;
     }
+
     img {
         width: 3vw;
     }
