@@ -151,12 +151,17 @@ a.nav-link{
 
 .main-content {
     background-color: #BBC2A8;
-    padding: 7vw 0;
+    background-image: url("/public/images/grass-background.jpg");
+    background-repeat: repeat;
 
 }
-
+.mask{
+    background-color:   rgba(164, 178, 168, 0.6);
+    padding: 7vw 0;
+}
 .first-element-main-content, .second-element-main-content, .third-element-main-content {
     width: 70%;
+    color: white;
 }
 
 .first-element-main-content, .third-element-main-content {
@@ -200,7 +205,7 @@ footer {
     address {
         font-family: Inria Serif;
         font-size: 1.2vw;
-        font-weight: 100;
+        font-weight: 500;
         line-height: 25px;
         line-height: 1.5vw;
         letter-spacing: 0em;
