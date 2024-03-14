@@ -31,37 +31,64 @@
             <div class="d-flex align-items-start flex-column first-wrap">
                 <div class="card first-element-main-content rounded-end-4">
                     <div class="card-body p-md-5">
-                        <h1 class="card-title">Why Chose Us</h1>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            With supporting text below as a natural lead-in to additional content.
-                            With supporting text below as a natural lead-in to additional content.</p>
+
+                        <div data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false"
+                             aria-controls="collapseExample1" class="main-block">
+                            <h1 class="card-title">Why Chose Us</h1>
+                            <p class="text-truncate const" style="max-width: 80%;">
+                                With supporting text below as a natural lead-in to additional content.
+                                With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <p id="collapseExample1" class="collapse card-text">With supporting text below as a natural
+                                lead-in to additional content.
+                                With supporting text below as a natural lead-in to additional content.
+                                With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class=" d-flex align-items-end flex-column ">
+            <div class="d-flex align-items-end flex-column">
                 <div class="card  second-element-main-content rounded-start-4">
                     <div class="card-body p-md-5">
-                        <h1 class="card-title">What We Do</h1>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            With supporting text below as a natural lead-in to additional content.
-                            With supporting text below as a natural lead-in to additional content.</p>
+                        <div data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+                             aria-controls="collapseExample2" class="main-block">
+                            <h1 class="card-title">What We Do</h1>
+                            <p class="text-truncate const" style="max-width: 80%;">
+                                With supporting text below as a natural lead-in to additional content.
+                                With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <p id="collapseExample2" class="collapse card-text">With supporting text below as a natural
+                                lead-in to additional content.
+                                With supporting text below as a natural lead-in to additional content.
+                                With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="d-flex align-items-start flex-column third-wrap">
-                <div class="card third-element-main-content rounded-end-4">
+            <div id="third" class="d-flex align-items-start flex-column third-wrap">
+                <div class="card  second-element-main-content rounded-end-4">
                     <div class="card-body p-md-5">
-                        <h1 class="card-title">Get In Touch</h1>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            With supporting text below as a natural lead-in to additional content.
-                            With supporting text below as a natural lead-in to additional content.</p>
+                        <div data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false"
+                             aria-controls="collapseExample3" class="main-block">
+                            <h1 class="card-title">Contact Us</h1>
+                            <p class="text-truncate const" style="max-width: 90%;">
+                                With supporting text below as a natural lead-in to additional content.
+                                With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <p id="collapseExample3" class="collapse card-text">With supporting text below as a natural
+                                lead-in to additional content.
+                                With supporting text below as a natural lead-in to additional content.
+                                With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 @include("layouts.footer")
+<script>
+    {!! Vite::content('resources/js/mainPage.js') !!}
+</script>
 </body>
 </html>

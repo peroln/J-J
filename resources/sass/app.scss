@@ -240,7 +240,9 @@ footer .copyright p {
         width: 3vw;
     }
 }
-
+.text-truncate{
+    transition: 5s ease-in-out;
+}
 @include media-breakpoint-down(md) {
     .canvas-background {
         /* fallback for old browsers */
