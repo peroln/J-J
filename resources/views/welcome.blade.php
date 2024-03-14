@@ -35,7 +35,7 @@
                         <div data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false"
                              aria-controls="collapseExample1" class="main-block">
                             <h1 class="card-title">Why Chose Us</h1>
-                            <p class="text-truncate const" style="max-width: 80%;">
+                            <p class="text-truncate const" style="max-width: 90%;">
                                 With supporting text below as a natural lead-in to additional content.
                                 With supporting text below as a natural lead-in to additional content.
                             </p>
@@ -53,7 +53,7 @@
                         <div data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
                              aria-controls="collapseExample2" class="main-block">
                             <h1 class="card-title">What We Do</h1>
-                            <p class="text-truncate const" style="max-width: 80%;">
+                            <p class="text-truncate const" style="max-width: 90%;">
                                 With supporting text below as a natural lead-in to additional content.
                                 With supporting text below as a natural lead-in to additional content.
                             </p>
