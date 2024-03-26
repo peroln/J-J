@@ -32,17 +32,27 @@
                 <div class="card first-element-main-content rounded-end-4">
                     <div class="card-body p-md-5">
 
-                        <div data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false"
-                             aria-controls="collapseExample1" class="main-block">
-                            <h1 class="card-title">Why Chose Us</h1>
-                            <p class="text-truncate const" style="max-width: 90%;">
-                                With supporting text below as a natural lead-in to additional content.
-                                With supporting text below as a natural lead-in to additional content.
-                            </p>
-                            <p id="collapseExample1" class="collapse card-text">With supporting text below as a natural
-                                lead-in to additional content.
-                                With supporting text below as a natural lead-in to additional content.
-                                With supporting text below as a natural lead-in to additional content.</p>
+                        <div class="accordion" id="accordionPanel1">
+                            <div class="accordion-item">
+                                <h1 class="card-title text-white mb-0" id="panels1-headingOne">
+                                    Why Chose Us
+                                    <button class="accordion-button collapsed text-white pb-0 px-0" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panels1-collapseOne"
+                                            aria-expanded="false"
+                                            aria-controls="panels1-collapseOne">
+                                        <p class="text-white">With supporting text below as a natural lead-in to additional content.</p>
+                                    </button>
+                                </h1>
+                                <div id="panels1-collapseOne" class="accordion-collapse collapse " aria-labelledby="panels1-headingOne">
+                                    <p class="accordion-body text-white pt-0 px-0">
+                                        <strong>This is the first item's accordion body.</strong>
+                                        It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                                        These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                        You can modify any of this with custom CSS or overriding our default variables.
+                                    </p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -50,45 +60,63 @@
             <div class="d-flex align-items-end flex-column">
                 <div class="card  second-element-main-content rounded-start-4">
                     <div class="card-body p-md-5">
-                        <div data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
-                             aria-controls="collapseExample2" class="main-block">
-                            <h1 class="card-title">What We Do</h1>
-                            <p class="text-truncate const" style="max-width: 90%;">
-                                With supporting text below as a natural lead-in to additional content.
-                                With supporting text below as a natural lead-in to additional content.
-                            </p>
-                            <p id="collapseExample2" class="collapse card-text">With supporting text below as a natural
-                                lead-in to additional content.
-                                With supporting text below as a natural lead-in to additional content.
-                                With supporting text below as a natural lead-in to additional content.</p>
+                        <div class="accordion" id="accordionPanel2">
+                            <div class="accordion-item">
+                                <h1 class="card-title text-white mb-0" id="panels2-headingOne">
+                                    What We Do
+                                    <button class="accordion-button collapsed text-white pb-0 px-0" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panels2-collapseOne"
+                                            aria-expanded="false"
+                                            aria-controls="panels2-collapseOne">
+                                        <p class="text-white">With supporting text below as a natural lead-in to additional content.</p>
+                                    </button>
+                                </h1>
+                                <div id="panels2-collapseOne" class="accordion-collapse collapse" aria-labelledby="panels2-headingOne">
+                                    <p class="accordion-body text-white pt-0 px-0">
+                                        <strong>This is the first item's accordion body.</strong>
+                                        It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                                        These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                        You can modify any of this with custom CSS or overriding our default variables.
+                                    </p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
             <div id="third" class="d-flex align-items-start flex-column third-wrap">
-                <div class="card  second-element-main-content rounded-end-4">
+                <div class="card  third-element-main-content  rounded-end-4">
                     <div class="card-body p-md-5">
-                        <div data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false"
-                             aria-controls="collapseExample3" class="main-block">
-                            <h1 class="card-title">Contact Us</h1>
-                            <p class="text-truncate const" style="max-width: 90%;">
-                                With supporting text below as a natural lead-in to additional content.
-                                With supporting text below as a natural lead-in to additional content.
-                            </p>
-                            <p id="collapseExample3" class="collapse card-text">With supporting text below as a natural
-                                lead-in to additional content.
-                                With supporting text below as a natural lead-in to additional content.
-                                With supporting text below as a natural lead-in to additional content.</p>
+                        <div class="accordion" id="accordionPanel3">
+                            <div class="accordion-item">
+                                <h1 class="card-title text-white mb-0" id="panels3-headingOne">
+                                    Contact Us
+                                    <button class="accordion-button collapsed text-white pb-0 px-0" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panels3-collapseOne"
+                                            aria-expanded="false"
+                                            aria-controls="panels3-collapseOne">
+                                        <p class="text-white">With supporting text below as a natural lead-in to additional content.</p>
+                                    </button>
+                                </h1>
+                                <div id="panels3-collapseOne" class="accordion-collapse collapse" aria-labelledby="panels3-headingOne">
+                                    <p class="accordion-body text-white pt-0 px-0">
+                                        <strong>This is the first item's accordion body.</strong>
+                                        It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                                        These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                        You can modify any of this with custom CSS or overriding our default variables.
+                                    </p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
 @include("layouts.footer")
-<script>
-    {!! Vite::content('resources/js/mainPage.js') !!}
-</script>
 </body>
 </html>
