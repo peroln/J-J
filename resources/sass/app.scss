@@ -175,8 +175,11 @@ a.nav-link {
     margin-bottom: 7vw;
 }
 
-.first-wrap, .third-wrap {
+.first-wrap, .third-wrap{
     margin-bottom: 7vw;
+    img{
+        width: 30%;
+    }
 }
 
 footer {
@@ -281,6 +284,11 @@ footer .copyright p {
     .navbar-brand {
         img {
             width: 3vw;
+        }
+    }
+    .first-wrap, .third-wrap, .fourth-wrap{
+        img{
+            width: 100%;
         }
     }
 
