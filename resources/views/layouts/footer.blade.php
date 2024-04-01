@@ -1,4 +1,4 @@
-<footer class="">
+<footer class="fixed-bottom">
     <div class="hstack gap-3 p-3">
         <div class="copyright "><p class="">&copy; 2024 My Web Page. All rights reserved.</p></div>
         <div class="ms-auto">
