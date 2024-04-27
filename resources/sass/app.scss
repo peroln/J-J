@@ -149,21 +149,22 @@ a.nav-link {
     background: linear-gradient(to top, rgba(122, 28, 224, 0), rgba(37, 117, 252, 0.9));
 }
 
-.main-content {
-    background-color: #BBC2A8;
-    background-image: url("/public/images/grass-background.jpg");
-    background-repeat: repeat;
-    background-size: 70%;
+body {
+    width: 100%;
+    background: linear-gradient(rgba(187, 194, 168, 0.5), rgba(187, 194, 168, 0.5)),
+    url("/public/images/grass-background.jpg") fixed repeat;
+    background-size: 50%;
+    padding-bottom: 12vh;
 }
 
 .mask {
-    background-color: rgba(187, 194, 168, 0.9);
-    padding: 7vw 0;
+    padding: 10% 0;
 }
 
 .first-element-main-content, .second-element-main-content, .third-element-main-content {
     width: 70%;
     color: white;
+    box-shadow: -20px 20px 30px #34475d;
 }
 
 .first-element-main-content, .third-element-main-content {
