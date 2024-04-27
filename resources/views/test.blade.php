@@ -28,7 +28,7 @@
     </div>
     {{--    </div>--}}
 
-    <div class="caption ">
+    <div class="caption">
         <div class="container-fluid p-0 position-relative">
             <div class="top-left d-flex flex-row bd-highlight"><h1 class="p3">When the grass gets growing </br> we get
                     mowing</h1>

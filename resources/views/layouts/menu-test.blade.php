@@ -28,7 +28,7 @@
                         <a class="nav-link" href="#">Services</a>
                     </li>
                     <li class="nav-item p-xl-3 p-xxl-5">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="{{route('contact-us')}}">Contact Us</a>
                     </li>
                 </ul>
             </div>
