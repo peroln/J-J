@@ -21,3 +21,14 @@ $accordion-button-active-color: none;
 $accordion-icon-color: white;
 $accordion-icon-active-color: white;
 $accordion-button-focus-box-shadow: none;
+$navbar-light-active-color: rgba(255, 215, 0, .9);
+$navbar-dark-active-color: rgba(255, 215, 0, .9);
+$navbar-light-color: rgba(255, 215, 0, .9);
+$navbar-light-hover-color: rgba(255, 215, 0, .9);
+$navbar-light-toggler-border-color: rgba(255, 215, 0, .9);
+$aspect-ratios: (
+    "1x1": 100%,
+    "4x3": calc(3 / 4 * 100%),
+    "16x9": calc(9 / 16 * 100%),
+    "21x9": calc(9 / 21 * 100%)
+);
