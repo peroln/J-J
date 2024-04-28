@@ -123,12 +123,11 @@ body {
 
 
     a.nav-link {
-        font-family: 'Inria Serif';
+        font-family: 'Protest Revolution';
         letter-spacing: 0em;
         text-align: center;
         font-size: 48px;
         font-size: 2vw;
-        font-weight: 700;
         color: white;
         text-shadow: 5px 5px 4px #000000;
     }
@@ -388,7 +387,11 @@ body {
         font-size: 2rem;
     }
 }
-
+.banner-img{
+    width: 100%;
+    min-height: 30vh;
+    object-fit: cover;
+}
 @include media-breakpoint-down(md) {
     .canvas-background {
         /* fallback for old browsers */
@@ -456,6 +459,7 @@ body {
         position: relative;
         font-family: 'Protest Revolution', sans-serif;
         font-width: bold;
+        margin-bottom: 13vh;
     }
 }
 

@@ -92,12 +92,13 @@ select {
 
 
 a.nav-link {
-    font-family: 'Inria Serif';
+    font-family: 'Protest Revolution';
     letter-spacing: 0em;
     text-align: center;
     font-size: 48px;
     font-size: 2vw;
-    font-weight: 700;
+    color: white;
+    text-shadow: 5px 5px 4px #000000;
 }
 
 
@@ -115,12 +116,12 @@ a.nav-link {
 
 .bottom-right {
     h1 {
-        font-family: 'Inria Serif';
+        font-family: 'Protest Revolution';
         letter-spacing: 0em;
         text-align: right;
         font-size: 100px;
         font-size: 4vw;
-        font-weight: 700;
+
         line-height: 120px;
         line-height: 4.5vw;
     }
@@ -128,13 +129,13 @@ a.nav-link {
 
 .top-left {
     h1 {
-        font-family: 'Inria Serif';
+        font-family: 'Protest Revolution';
         color: white;
         font-size: 114px;
         font-size: 5vw;
         line-height: 121px;
         line-height: 6vw;
-        font-weight: 700;
+
     }
 }
 
@@ -189,19 +190,19 @@ footer {
 
 .first-element-main-content, .second-element-main-content, .third-element-main-content, footer {
     h1 {
-        font-family: Inria Serif;
+        font-family: "Protest Revolution";
         font-size: 90px;
         font-size: 4vw;
-        font-weight: 700;
+
         line-height: 108px;
         line-height: 4.5vw;
         letter-spacing: 0em;
     }
 
     p {
-        font-family: Inria Serif;
+        font-family: "Protest Revolution";
         font-size: 2.2vw;
-        font-weight: 700;
+
         line-height: 58px;
         line-height: 3vw;
         letter-spacing: 0em;
@@ -234,7 +235,7 @@ footer .copyright p {
     font-family: 'Inria Serif';
     letter-spacing: 0em;
     text-align: center;
-    font-weight: 700;
+
 
     p {
         font-size: 1vw;
@@ -259,7 +260,7 @@ footer .copyright p {
     a.nav-link {
         font-size: 20px;
         font-size: 4vw;
-        font-weight: 700;
+
         line-height: 36px;
         line-height: 6vw;
     }
@@ -267,7 +268,7 @@ footer .copyright p {
         h1 {
             font-size: 90px;
             font-size: 4vw;
-            font-weight: 700;
+
             line-height: 108px;
             line-height: 4.5vw;
             letter-spacing: 0em;
@@ -275,7 +276,7 @@ footer .copyright p {
 
         p {
             font-size: 3vw;
-            font-weight: 700;
+
             line-height: 58px;
             line-height: 3.5vw;
             letter-spacing: 0em;

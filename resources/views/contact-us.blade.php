@@ -23,7 +23,7 @@
 <body>
 <div id="app">
     <div class="banner-contact">
-        <img src="{{asset('/images/houses.jpg')}}" alt="" class="w-100">
+        <img src="{{asset('/images/houses.jpg')}}" alt="" class="w-100 banner-img">
     </div>
     <div class="map">
         @include("layouts.menu-test")
