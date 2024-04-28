@@ -177,9 +177,10 @@ body {
     margin-bottom: 7vw;
 }
 
-.first-wrap, .third-wrap{
+.first-wrap, .third-wrap {
     margin-bottom: 7vw;
-    img{
+
+    img {
         width: 30%;
     }
 }
@@ -197,26 +198,30 @@ footer {
         line-height: 108px;
         line-height: 4.5vw;
         letter-spacing: 0em;
+        text-shadow: 5px 5px 4px #000000;
     }
 
-    p {
+    p, ol li {
         font-family: "Protest Revolution";
         font-size: 2.2vw;
-
+        color: white;
         line-height: 58px;
         line-height: 3vw;
         letter-spacing: 0em;
         text-align: left;
+        text-shadow: 5px 5px 4px #000000;
     }
 
     address {
-        font-family: Inria Serif;
+        font-family: "Protest Revolution";
+        color: white;
         font-size: 1.2vw;
         font-weight: 500;
         line-height: 25px;
         line-height: 1.5vw;
         letter-spacing: 0em;
         text-align: left;
+        text-shadow: 5px 5px 4px #000000;
     }
 }
 
@@ -247,6 +252,9 @@ footer .copyright p {
 }
 
 @include media-breakpoint-down(md) {
+    .call-img {
+        max-width: 50%;
+    }
     .canvas-background {
         /* fallback for old browsers */
         background: #c7a9e8;
@@ -288,8 +296,8 @@ footer .copyright p {
             width: 3vw;
         }
     }
-    .first-wrap, .third-wrap, .fourth-wrap{
-        img{
+    .first-wrap, .third-wrap, .fourth-wrap {
+        img {
             width: 100%;
         }
     }

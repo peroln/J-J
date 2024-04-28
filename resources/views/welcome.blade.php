@@ -41,21 +41,38 @@
                                             data-bs-target="#panels1-collapseOne"
                                             aria-expanded="false"
                                             aria-controls="panels1-collapseOne">
-                                        <p class="text-white">With supporting text below as a natural lead-in to
-                                            additional content.</p>
+                                        <p class="text-white">Value, Service, Customer care & Reliability are core
+                                            values to us. We aim to meet &
+                                            surpass your expectations.</p>
                                     </button>
                                 </h1>
                                 <div id="panels1-collapseOne" class="accordion-collapse collapse "
                                      aria-labelledby="panels1-headingOne">
                                     <p class="accordion-body text-white pt-0 px-0">
                                         <img src="{{asset('images/why.jpg')}}"
-                                             class="img-thumbnail float-start me-3 my-3 first-block-img" alt="...">
-                                        <strong>This is the first item's accordion body.</strong>
-                                        It is shown by default, until the collapse plugin adds the appropriate classes
-                                        that we use to style each element.
-                                        These classes control the overall appearance, as well as the showing and hiding
-                                        via CSS transitions.
-                                        You can modify any of this with custom CSS or overriding our default variables.
+                                             class="img-thumbnail float-start me-2 me-md-3 my-2 my-md-3 first-block-img w-50"
+                                             alt="...">
+                                        With over 30 years of experience in lawn and hedge trimming, we bring
+                                        unparalleled expertise to every job. Our commitment to value, service, customer
+                                        care, and reliability is unmatched. We strive not only to meet but exceed your
+                                        expectations. Trust us to transform your outdoor space with precision and
+                                        professionalism.
+                                        When you choose J&J, you're choosing a team of professionals dedicated to
+                                        delivering exceptional results. From our initial consultation to the completion
+                                        of the project, we prioritize clear communication, reliable service, and your
+                                        complete satisfaction.--}}
+                                        Contact us today for all your lawn and hedge trimming needs.
+                                    </p>
+
+                                    {{--                                        Welcome to J&J, where expertise meets excellence in lawn and hedge trimming services. With three decades of dedicated experience in the fields of Britain and Ireland, we bring a wealth of knowledge and skill to every project we undertake.--}}
+
+                                    {{--                                        At J&J, we hold our core values of value, service, customer care, and reliability in the highest regard. These principles guide us in every interaction and task, ensuring that our clients receive nothing short of the best. Whether it's a meticulous lawn trim or precise hedge shaping, we approach each job with attention to detail and a commitment to excellence.--}}
+
+                                    {{--                                        Our aim is simple: to not only meet your expectations but to surpass them. We understand the importance of a well-maintained outdoor space, and we take pride in our ability to transform lawns and hedges into beautiful, polished features of your property.--}}
+
+                                    {{--                                        When you choose J&J, you're choosing a team of professionals dedicated to delivering exceptional results. From our initial consultation to the completion of the project, we prioritize clear communication, reliable service, and your complete satisfaction.--}}
+
+                                    {{--                                        Experience the difference that three decades of expertise can make. Contact us today for all your lawn and hedge trimming needs.--}}
                                     </p>
                                 </div>
                             </div>
@@ -76,19 +93,29 @@
                                             data-bs-target="#panels2-collapseOne"
                                             aria-expanded="false"
                                             aria-controls="panels2-collapseOne">
-                                        <p class="text-white">With supporting text below as a natural lead-in to
-                                            additional content.</p>
+                                        <p class="text-white">We specialize in precise lawn trimming, ensuring your
+                                            outdoor space boasts a lush, well-manicured appearance. Our expertise
+                                            extends to meticulous hedge shaping, crafting elegant and tidy hedges that
+                                            enhance the beauty of your landscape.</p>
                                     </button>
                                 </h1>
                                 <div id="panels2-collapseOne" class="accordion-collapse collapse"
                                      aria-labelledby="panels2-headingOne">
                                     <p class="accordion-body text-white pt-0 px-0">
-                                        <strong>This is the first item's accordion body.</strong>
-                                        It is shown by default, until the collapse plugin adds the appropriate classes
-                                        that we use to style each element.
-                                        These classes control the overall appearance, as well as the showing and hiding
-                                        via CSS transitions.
-                                        You can modify any of this with custom CSS or overriding our default variables.
+                                    <ol>
+                                        <li>Lawn Trimming: Achieving pristine lawns through precise cuts and meticulous
+                                            care, enhancing the beauty of your outdoor space.
+                                        </li>
+                                        <li>Hedge Shaping: Crafting beautifully manicured hedges that complement your
+                                            landscape, creating a polished and inviting atmosphere.
+                                        </li>
+                                        <li> Gardening Services: Providing comprehensive gardening solutions tailored to
+                                            your needs, from planting and maintenance to landscaping design, ensuring
+                                            your outdoor oasis thrives year-round.
+                                        </li>
+                                    </ol>
+
+
                                     </p>
                                     <div id="carouselExampleFade" class="carousel slide carousel-fade"
                                          data-bs-ride="carousel">
@@ -147,7 +174,7 @@
                                     <p class="accordion-body text-white pt-0 px-0">
                                         <img
                                             src="https://as2.ftcdn.net/v2/jpg/03/11/52/79/1000_F_311527981_cpzTxjBwgu3Z8q7GzPAA4oxkp3R9YwU0.jpg"
-                                            class="rounded-circle float-end m-sm-3" alt="...">
+                                            class="rounded-circle float-end m-sm-3 call-img" alt="...">
                                         By clicking on the link you will find where our office is located.
                                         You can also fill out the form and we will call you back at a time convenient
                                         for you.</br>
@@ -171,22 +198,26 @@
                                             data-bs-target="#panels4-collapseOne"
                                             aria-expanded="false"
                                             aria-controls="panels4-collapseOne">
-                                        <p class="text-white">With supporting text below as a natural lead-in to
-                                            additional content.</p>
+                                        <p class="text-white">Here's what our clients say:</p>
                                     </button>
                                 </h1>
                                 <div id="panels4-collapseOne" class="accordion-collapse collapse"
                                      aria-labelledby="panels4-headingOne">
                                     <p class="accordion-body text-white pt-0 px-0">
-                                        <strong>This is the first item's accordion body.</strong>
                                         <img
                                             src="https://media.istockphoto.com/id/1347784849/photo/scenic-view-of-a-beautiful-landscape-garden-with-a-green-mowed-lawn.webp?b=1&s=612x612&w=0&k=20&c=NXYgs2-QGp5HMxVdi2mrR-1AcNvteyVAPa4638lZSpI="
                                             class="img-thumbnail float-end  ms-3 my-3" alt="...">
-                                        It is shown by default, until the collapse plugin adds the appropriate classes
-                                        that we use to style each element.
-                                        These classes control the overall appearance, as well as the showing and hiding
-                                        via CSS transitions.
-                                        You can modify any of this with custom CSS or overriding our default variables.
+                                    <figure>
+                                        <blockquote class="blockquote">
+                                            <p>"Absolutely thrilled with the lawn trimming service provided by [Company
+                                                Name]. Their attention to detail is unmatched, and my yard has never
+                                                looked better. Highly recommend their expertise to anyone seeking
+                                                top-notch lawn care!"</p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            client <cite title="Source Title">Oleh Peretiatko</cite>
+                                        </figcaption>
+                                    </figure>
                                     </p>
                                 </div>
                             </div>
