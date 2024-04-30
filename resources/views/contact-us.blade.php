@@ -54,7 +54,8 @@
                                         <div class="mb-3 input-group has-validation">
                                             <label for="my-tel" class="col-form-label">My number:</label>
                                             <div class="input-group-text">+353</div>
-                                            <input type="tel" class="form-control" id="my-tel" maxlength="9" size="9"
+                                            <input type="tel" class="form-control" id="my-tel" maxlength="9"
+                                                   pattern="[0-9]{9}"
                                                    placeholder="123456789" required>
                                             <div class="invalid-feedback">
                                                 Please print your phone number.
