@@ -176,6 +176,7 @@ body {
 .second-element-main-content {
     background-color: #326271;
     margin-bottom: 7vw;
+
 }
 
 .first-wrap, .third-wrap {
@@ -185,12 +186,14 @@ body {
         width: 30%;
     }
 }
-
+.review-img{
+    text-shadow: 5px 5px 4px #000000;
+}
 footer {
     background-color: #273C53;
 }
 
-.first-element-main-content, .second-element-main-content, .third-element-main-content, footer {
+.first-element-main-content, .second-element-main-content, .third-element-main-content {
     h1 {
         font-family: "Protest Revolution";
         font-size: 90px;
@@ -212,28 +215,18 @@ footer {
         text-align: left;
         text-shadow: 5px 5px 4px #000000;
     }
-
-    address {
-        font-family: "Protest Revolution";
-        color: white;
-        font-size: 1.2vw;
-        font-weight: 500;
-        line-height: 25px;
-        line-height: 1.5vw;
-        letter-spacing: 0em;
-        text-align: left;
-        text-shadow: 5px 5px 4px #000000;
-    }
 }
 
-footer .copyright p {
-    font-family: Inria Serif;
+.address, .blockquote-footer, footer .hstack {
+    font-family: "Protest Revolution";
+    color: white;
     font-size: 1.2vw;
-    font-weight: 150;
-    line-height: 36px;
-    line-height: 1.3vw;
+    font-weight: 500;
+    line-height: 25px;
+    line-height: 1.5vw;
     letter-spacing: 0em;
     text-align: left;
+    text-shadow: 5px 5px 4px #000000;
 }
 
 .navbar-brand {
@@ -251,7 +244,6 @@ footer .copyright p {
         width: 3vw;
     }
 }
-
 @include media-breakpoint-down(md) {
     .call-img {
         max-width: 50%;
@@ -273,7 +265,7 @@ footer .copyright p {
         line-height: 36px;
         line-height: 6vw;
     }
-    .first-element-main-content, .second-element-main-content, .third-element-main-content, footer {
+    .first-element-main-content, .second-element-main-content, .third-element-main-content {
         h1 {
             font-size: 90px;
             font-size: 4vw;

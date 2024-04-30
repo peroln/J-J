@@ -35,7 +35,7 @@
                         <div class="accordion" id="accordionPanel1">
                             <div class="accordion-item">
                                 <h1 class="card-title text-white mb-0" id="panels1-headingOne">
-                                    Why Chose Us
+                                    Why Choose Us
                                     <button class="accordion-button collapsed text-white pb-0 px-0" type="button"
                                             data-bs-toggle="collapse"
                                             data-bs-target="#panels1-collapseOne"
@@ -49,7 +49,7 @@
                                 <div id="panels1-collapseOne" class="accordion-collapse collapse "
                                      aria-labelledby="panels1-headingOne">
                                     <p class="accordion-body text-white pt-0 px-0">
-                                        <img src="{{asset('images/why.jpg')}}"
+                                        <img src="{{asset('images/WhyChooseUs.jpg')}}"
                                              class="img-thumbnail float-start me-2 me-md-3 my-2 my-md-3 first-block-img w-50"
                                              alt="...">
                                         With over 30 years of experience in lawn and hedge trimming, we bring
@@ -94,14 +94,15 @@
                                             aria-expanded="false"
                                             aria-controls="panels2-collapseOne">
                                         <p class="text-white">We specialize in precise lawn trimming, ensuring your
-                                            outdoor space boasts a lush, well-manicured appearance. Our expertise
-                                            extends to meticulous hedge shaping, crafting elegant and tidy hedges that
-                                            enhance the beauty of your landscape.</p>
+                                            outdoor space boasts a lush, well-manicured appearance. </p>
                                     </button>
                                 </h1>
                                 <div id="panels2-collapseOne" class="accordion-collapse collapse"
                                      aria-labelledby="panels2-headingOne">
                                     <p class="accordion-body text-white pt-0 px-0">
+                                        Our expertise
+                                        extends to meticulous hedge shaping, crafting elegant and tidy hedges that
+                                        enhance the beauty of your landscape.
                                     <ol>
                                         <li>Lawn Trimming: Achieving pristine lawns through precise cuts and meticulous
                                             care, enhancing the beauty of your outdoor space.
@@ -206,15 +207,14 @@
                                     <p class="accordion-body text-white pt-0 px-0">
                                         <img
                                             src="https://media.istockphoto.com/id/1347784849/photo/scenic-view-of-a-beautiful-landscape-garden-with-a-green-mowed-lawn.webp?b=1&s=612x612&w=0&k=20&c=NXYgs2-QGp5HMxVdi2mrR-1AcNvteyVAPa4638lZSpI="
-                                            class="img-thumbnail float-end  ms-3 my-3" alt="...">
+                                            class="img-thumbnail float-end  ms-3 my-3 shadow-lg" alt="...">
                                     <figure>
                                         <blockquote class="blockquote">
-                                            <p>"Absolutely thrilled with the lawn trimming service provided by [Company
-                                                Name]. Their attention to detail is unmatched, and my yard has never
+                                            <p>"Absolutely thrilled with the lawn trimming service provided by J&J. Their attention to detail is unmatched, and my yard has never
                                                 looked better. Highly recommend their expertise to anyone seeking
                                                 top-notch lawn care!"</p>
                                         </blockquote>
-                                        <figcaption class="blockquote-footer">
+                                        <figcaption class="blockquote-footer text-end">
                                             client <cite title="Source Title">Oleh Peretiatko</cite>
                                         </figcaption>
                                     </figure>
