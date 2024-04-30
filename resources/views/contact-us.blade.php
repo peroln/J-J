@@ -72,7 +72,8 @@
                                             <textarea class="form-control" id="message-text"></textarea>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Close
                                             </button>
                                             <button type="submit" class="btn btn-primary">Send message</button>
                                         </div>
@@ -90,10 +91,9 @@
                 </div>
             </div>
         </div>
-        @include("layouts.footer")
     </div>
-
 </div>
+@include("layouts.footer")
 </body>
 <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields

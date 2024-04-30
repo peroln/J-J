@@ -178,7 +178,7 @@
                                         By clicking on the link you will find where our office is located.
                                         You can also fill out the form and we will call you back at a time convenient
                                         for you.</br>
-                                        <a class="btn btn-lg btn-success" href="{{route('contact-us')}}" role="button">Continue</a>
+                                        <a class="btn btn-lg btn-success mt-3" href="{{route('contact-us')}}" role="button">Continue</a>
                                     </p>
                                 </div>
                             </div>

@@ -291,26 +291,18 @@ body {
             letter-spacing: 0em;
             text-align: left;
         }
-
-        address {
-            font-family: Inria Serif;
-            font-size: 1.2vw;
-            font-weight: 500;
-            line-height: 25px;
-            line-height: 1.5vw;
-            letter-spacing: 0em;
-            text-align: left;
-        }
     }
 
-    footer .copyright p {
-        font-family: 'Inria Serif';
+    footer .copyright p, address {
+        font-family: Protest Revolution;
+        color: #fff;
         font-size: 1.2vw;
-        font-weight: 150;
-        line-height: 36px;
-        line-height: 1.3vw;
+        font-weight: 500;
+        line-height: 25px;
+        line-height: 1.5vw;
         letter-spacing: 0em;
         text-align: left;
+        text-shadow: 5px 5px 4px #000000;
     }
 
     .navbar-brand {
@@ -330,7 +322,6 @@ body {
     }
 
     footer {
-        height: 10vh;
         background-color: #273C53;
         z-index: 1046 !important;
     }
