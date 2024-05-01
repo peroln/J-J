@@ -60,7 +60,7 @@
                                         When you choose J&J, you're choosing a team of professionals dedicated to
                                         delivering exceptional results. From our initial consultation to the completion
                                         of the project, we prioritize clear communication, reliable service, and your
-                                        complete satisfaction.--}}
+                                        complete satisfaction.
                                         Contact us today for all your lawn and hedge trimming needs.
                                     </p>
 
