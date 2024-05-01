@@ -146,28 +146,25 @@ body {
 
     .bottom-right {
         h1 {
-            font-family: 'Inria Serif';
+            font-family: 'Protest Revolution';
             letter-spacing: 0em;
             text-align: right;
-            font-size: 100px;
+            color: black;
             font-size: 4vw;
-            font-weight: 700;
-            line-height: 120px;
+            font-weight: 500;
             line-height: 4.5vw;
-            text-shadow: 2px 2px 5px blue;
+            text-shadow: 2px 2px 5px green;
         }
     }
 
     .top-left {
         h1 {
-            font-family: 'Inria Serif';
+            font-family: "Protest Revolution";
             color: white;
-            font-size: 114px;
             font-size: 5vw;
-            line-height: 121px;
             line-height: 6vw;
-            font-weight: 700;
-            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            font-weight: 500;
+            text-shadow: 5px 5px 4px #000000;;
         }
     }
 
@@ -273,7 +270,7 @@ body {
 
     .first-element-main-content, .second-element-main-content, .third-element-main-content, footer {
         h1 {
-            font-family: Inria Serif;
+            font-family: "Protest Revolutiont";
             font-size: 90px;
             font-size: 4vw;
             font-weight: 700;
@@ -345,7 +342,7 @@ body {
     }
 
     .bottom-right h1 {
-        color: rgb(173, 187, 153);
+        color: white;
     }
 
     .navbar-brand {
@@ -382,6 +379,15 @@ body {
     width: 100%;
     min-height: 30vh;
     object-fit: cover;
+}
+.top-left h1 {
+    font-family: "Protest Revolution";
+    color: #fff;
+    font-size: 114px;
+    font-size: 5vw;
+    line-height: 121px;
+    line-height: 6vw;
+    text-shadow: 5px 5px 4px #000000;
 }
 //-------------------------------------------------------------------
 .container__items {
