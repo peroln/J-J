@@ -383,7 +383,46 @@ body {
     min-height: 30vh;
     object-fit: cover;
 }
+//-------------------------------------------------------------------
+.container__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    //height: 100vh;
+    margin-bottom: 12vh;
+}
+.polaroid {
+    margin: 30px;
+    width: 40%;
+    //height: 450px;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.polaroid__content-image {
+    //height: 350px;
+    width: 100%;
+    overflow: hidden;
+}
+.polaroid__content-image > img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.polaroid__content-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+//-------------------------------------------------------------------
 @include media-breakpoint-down(md) {
+    .polaroid {
+        width: 80%;
+    }
     .canvas-background {
         /* fallback for old browsers */
         background: #c7a9e8;

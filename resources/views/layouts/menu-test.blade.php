@@ -19,13 +19,13 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item p-xl-3 p-xxl-5">
-                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                        <a class="nav-link" aria-current="page" href="{{route('home')}}">Home</a>
                     </li>
                     <li class="nav-item p-xl-3 p-xxl-5">
                         <a class="nav-link" href="#">About us</a>
                     </li>
                     <li class="nav-item p-xl-3 p-xxl-5">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="{{route('services')}}">Services</a>
                     </li>
                     <li class="nav-item p-xl-3 p-xxl-5">
                         <a class="nav-link" href="{{route('contact-us')}}">Contact Us</a>
