@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md gradient-custom fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand ms-md-5 mt-md-3" href="/">
-            <img src="{{url('/images/lawnmower.png')}}" alt="J&J" class="mx-auto">
+            <img src="{{asset('/images/lawnmower.png')}}" alt="J&J" class="mx-auto">
             J<span class="middle-letter">&</span>J
             <p>English Gardener</p>
         </a>

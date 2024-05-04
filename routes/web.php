@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\RequestCallController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,3 +26,4 @@ Route::get('/services', function () {
 Auth::routes();
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('admin');
+Route::post('/message', [RequestCallController::class, 'store'])->name('message');

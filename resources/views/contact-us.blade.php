@@ -50,27 +50,28 @@
                                             aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form class="needs-validation" novalidate>
+                                    <form action="{{route('message')}}" method="post" class="needs-validation" novalidate >
+                                        @csrf
                                         <div class="mb-3 input-group has-validation">
                                             <label for="my-tel" class="col-form-label">My number:</label>
                                             <div class="input-group-text">+353</div>
                                             <input type="tel" class="form-control" id="my-tel" maxlength="9"
                                                    pattern="[0-9]{9}"
-                                                   placeholder="123456789" required>
+                                                   placeholder="123456789" name="phone_number" required>
                                             <div class="invalid-feedback">
                                                 Please print your phone number.
                                             </div>
                                         </div>
                                         <div class="mb-3">
                                             <label for="recipient-name" class="col-form-label">My name:</label>
-                                            <input type="text" class="form-control" id="recipient-name" required>
+                                            <input type="text" maxlength="50" size="50" name="name" class="form-control" id="recipient-name" required>
                                             <div class="invalid-feedback">
                                                 Please print your name.
                                             </div>
                                         </div>
                                         <div class="mb-3">
                                             <label for="message-text" class="col-form-label">Message:</label>
-                                            <textarea class="form-control" id="message-text"></textarea>
+                                            <textarea name="text" maxlength="255" size="255" class="form-control" id="message-text"></textarea>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
