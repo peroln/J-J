@@ -45,7 +45,7 @@
         #image {
             width: 150px;
             height: auto;
-            margin-top: 16px;
+            margin: 16px 30px;
         }
 
         #rightbar {
@@ -91,9 +91,12 @@
         <h1 class="heading">You have request to recall from <strong>{{ $requestCall->name }}</strong></h1>
         <h3>His/Her phone number is {{ $requestCall->phone_number }}</h3>
 
-        <p>And message: {{$requestCall->text}}</p>
+        @if($requestCall->text)
+            <p>And message: {{$requestCall->text}}</p>
+        @endif
         <div class="text-div">Thank you,</div>
-        <div class="text-div">Your site.</div>
+        <div class="text-div">Your lovely site.</div>
+
     </div>
 </div>
 </body>
