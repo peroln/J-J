@@ -26,6 +26,7 @@
             position: relative;
             display: block;
             border-bottom: 1px solid #504597;
+            background-color: green;
         }
 
         .button {
@@ -83,7 +84,7 @@
 <body>
 <div id="box">
     <div id="header">
-        <img id="image" src="{{asset($requestCall->logo)}}">
+        <img id="image" src="{{asset($logo)}}">
     </div>
     <div class="spacing"></div>
     <div id="rightbar">
