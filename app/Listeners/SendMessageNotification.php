@@ -26,6 +26,6 @@ class SendMessageNotification
     public function handle(RequestCallSaved $event): void
     {
 
-        Mail::to('your_email@gmail.com')->send(new AdminMail($event->requestCall));
+        Mail::to(config('to.address'))->send(new AdminMail($event->requestCall));
     }
 }

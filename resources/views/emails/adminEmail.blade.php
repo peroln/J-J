@@ -88,7 +88,8 @@
     </div>
     <div class="spacing"></div>
     <div id="rightbar">
-        <h1 class="heading">You have request to recall from <strong>{{ $requestCall->name }}</strong></h1>
+        <h1 class="heading">Hello {{$sender}}!</h1>
+        <h2>You have request to recall from <strong>{{ $requestCall->name }}</strong></h2>
         <h3>His/Her phone number is {{ $requestCall->phone_number }}</h3>
 
         @if($requestCall->text)

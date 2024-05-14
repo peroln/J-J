@@ -13,13 +13,14 @@ use Illuminate\Queue\SerializesModels;
 class AdminMail extends Mailable
 {
     use Queueable, SerializesModels;
-public string $logo;
+public string $logo, $sender;
     /**
      * Create a new message instance.
      */
     public function __construct(public RequestCall $requestCall)
     {
         $this->logo ='/images/lawnmower.png';
+        $this->sender = config('mail.to.name');
     }
 
     /**

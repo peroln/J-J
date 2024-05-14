@@ -14,13 +14,6 @@ return [
     */
 
     'default' => env('MAIL_MAILER', 'smtp'),
-  /*  'stream' => [
-        'ssl' => [
-            'allow_self_signed' => true,
-            'verify_peer' => false,
-            'verify_peer_name' => false,
-        ],
-    ],*/
 
     /*
     |--------------------------------------------------------------------------
@@ -109,6 +102,15 @@ return [
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
+    ],
+    /*
+     |--------------------------------------------------------------------------
+     | Global "To" Address
+     |--------------------------------------------------------------------------
+    */
+    'to' => [
+        'address' => env('MAIL_TO_ADDRESS', 'peretjatkool@gmail.com'),
+        'name' => env('MAIL_TO_NAME', 'Oleh')
     ],
 
     /*
