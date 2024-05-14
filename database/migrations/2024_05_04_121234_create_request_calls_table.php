@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name', 50);
             $table->unsignedInteger('phone_number');
-            $table->string('text', 255);
+            $table->string('text', 255)->nullable();
             $table->timestamps();
         });
     }

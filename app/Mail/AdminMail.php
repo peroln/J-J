@@ -13,7 +13,7 @@ use Illuminate\Queue\SerializesModels;
 class AdminMail extends Mailable
 {
     use Queueable, SerializesModels;
-protected string $logo;
+public string $logo;
     /**
      * Create a new message instance.
      */
