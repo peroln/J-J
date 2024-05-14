@@ -8,6 +8,7 @@ export default defineConfig({
                 'resources/sass/app.scss',
                 'resources/sass/video.scss',
                 'resources/js/app.js',
+                'resources/js/form-validation.js',
             ],
             refresh: true,
         }),
