@@ -4,69 +4,50 @@
     <title>J&J</title>
     <style>
         body {
-            height: 750px;
-            margin: 2px;
+            height: 100vh;
             padding: 2px;
             font-family: Helvetica, Arial, sans-serif;
         }
 
-        .button-container {
-            margin: 40px 0;
-        }
-
         #box {
-            width: 850px;
+            width: 100%;
             margin: 0 auto;
-            height: 100%;
+            height: 100vh;
         }
 
         #header {
+            padding: 10px;
             height: 200px;
             width: 100%;
             position: relative;
             display: block;
-            border-bottom: 1px solid #504597;
             background-color: green;
         }
 
-        .button {
-            background-color: #d60e0e;
+        #button {
+            display: block;
+            background-color: blue;
             border: none;
             color: white !important;
             padding: 10px 25px;
             text-align: center;
             text-decoration: none;
-            margin: auto;
+            margin: 15px auto;
             font-size: 22px;
             cursor: pointer;
             border-radius: 10px;
         }
 
         #image {
+            display: block;
             width: 150px;
             height: auto;
-            margin: 16px 30px;
-        }
-
-        #rightbar {
-            width: 100%;
-            height: 560px;
-            padding: 0px;
+            margin: 16px auto;
         }
 
         .text-div {
             font-size: 18px;
             margin-bottom: 3px;
-        }
-
-        #footer {
-            clear: both;
-            height: 40px;
-            text-align: center;
-            background-color: #2d0f80;
-            margin: 0px;
-            padding: 0px;
-            color: white;
         }
 
         p, pre {
@@ -79,6 +60,9 @@
             font-size: 24px;
         }
 
+        #name {
+            color: green;
+        }
     </style>
 </head>
 <body>
@@ -89,9 +73,10 @@
     <div class="spacing"></div>
     <div id="rightbar">
         <h1 class="heading">Hello {{$sender}}!</h1>
-        <h2>You have request to recall from <strong>{{ $requestCall->name }}</strong></h2>
-        <h3>His/Her phone number is <a href="tel:{{$requestCall->phone_number}}">{{ $requestCall->phone_number }}</a> </h3>
-
+        <h2>You have request to recall from <strong id="name">{{ $requestCall->name }}</strong></h2>
+        <h3>His/Her phone number is {{ $requestCall->phone_number }}
+        </h3>
+        <a id="button" href="tel:{{$requestCall->phone_number}}">Call</a>
         @if($requestCall->text)
             <p>And message: {{$requestCall->text}}</p>
         @endif
