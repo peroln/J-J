@@ -90,7 +90,7 @@
     <div id="rightbar">
         <h1 class="heading">Hello {{$sender}}!</h1>
         <h2>You have request to recall from <strong>{{ $requestCall->name }}</strong></h2>
-        <h3>His/Her phone number is {{ $requestCall->phone_number }}</h3>
+        <h3>His/Her phone number is <a href="tel:{{$requestCall->phone_number}}">{{ $requestCall->phone_number }}</a> </h3>
 
         @if($requestCall->text)
             <p>And message: {{$requestCall->text}}</p>
