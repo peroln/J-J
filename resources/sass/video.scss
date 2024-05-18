@@ -87,21 +87,6 @@ select {
         scroll-behavior: auto !important;
     }
 }
-
-// Finish reset styles
-//@font-face {
-//    font-family: "Jacquard 12 Charted", system-ui;
-//    src: url("/resources/fonts/Jacquard12Charted-Regular.ttf");
-//    font-weight: 400;
-//    font-style: normal;
-//}
-//@font-face {
-//    font-family: "Protest Revolution", sans-serif;
-//    src: url("/resources/fonts/Protest_Revolution/ProtestRevolution-Regular.ttf");
-//    font-weight: 400;
-//    font-style: normal;
-//}
-
 body {
     width: 100%;
     background: linear-gradient(rgba(187, 194, 168, 0.5), rgba(187, 194, 168, 0.5)),

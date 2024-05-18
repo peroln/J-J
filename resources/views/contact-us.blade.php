@@ -1,23 +1,7 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Protest+Revolution&display=swap"
-          rel="stylesheet">
-
-    <!-- Scripts -->
+    @include('layouts.base-head')
     @vite(['resources/sass/video.scss', 'resources/js/app.js', 'resources/js/form-validation.js'])
 </head>
 <body>
@@ -26,7 +10,7 @@
         <img src="{{asset('/images/houses.jpg')}}" alt="" class="w-100 banner-img">
     </div>
     <div class="map">
-        @include("layouts.menu-test")
+        @include("layouts.menu")
         <div class="container-fluid">
             <div class="card-map">
                 <div class="card-body ps-md-5">
@@ -50,7 +34,8 @@
                                             aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="{{route('message')}}" method="post" class="needs-validation" novalidate >
+                                    <form action="{{route('message')}}" method="post" class="needs-validation"
+                                          novalidate>
                                         @csrf
                                         <div class="mb-3 input-group has-validation">
                                             <label for="my-tel" class="col-form-label">My number:</label>
@@ -64,14 +49,16 @@
                                         </div>
                                         <div class="mb-3">
                                             <label for="recipient-name" class="col-form-label">My name:</label>
-                                            <input type="text" maxlength="50" size="50" name="name" class="form-control" id="recipient-name" required>
+                                            <input type="text" maxlength="50" size="50" name="name" class="form-control"
+                                                   id="recipient-name" required>
                                             <div class="invalid-feedback">
                                                 Please print your name.
                                             </div>
                                         </div>
                                         <div class="mb-3">
                                             <label for="message-text" class="col-form-label">Message:</label>
-                                            <textarea name="text" maxlength="255" size="255" class="form-control" id="message-text"></textarea>
+                                            <textarea name="text" maxlength="255" size="255" class="form-control"
+                                                      id="message-text"></textarea>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -97,7 +84,4 @@
 </div>
 @include("layouts.footer")
 </body>
-<script>
-
-</script>
 </html>

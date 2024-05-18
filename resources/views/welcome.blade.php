@@ -1,29 +1,14 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Protest+Revolution&display=swap"
-          rel="stylesheet">
-    <!-- Scripts -->
+    @include('layouts.base-head')
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-
 </head>
 <body>
-
 <div id="app">
     <div class="container-fluid p-0 position-relative">
         <img src="{{url('/images/main_bg_image.jpeg')}}" class="img-fluid">
-        @include("layouts.menu-test")
+        @include("layouts.menu")
         <div class="top-left"><h1 class="p3">When the grass gets growing </br> we get mowing</h1></div>
         <div class="bottom-right"><h1 class="p3">Gardening </br> services</h1></div>
     </div>
@@ -63,20 +48,8 @@
                                         complete satisfaction.
                                         Contact us today for all your lawn and hedge trimming needs.
                                     </p>
-
-                                    {{--                                        Welcome to J&J, where expertise meets excellence in lawn and hedge trimming services. With three decades of dedicated experience in the fields of Britain and Ireland, we bring a wealth of knowledge and skill to every project we undertake.--}}
-
-                                    {{--                                        At J&J, we hold our core values of value, service, customer care, and reliability in the highest regard. These principles guide us in every interaction and task, ensuring that our clients receive nothing short of the best. Whether it's a meticulous lawn trim or precise hedge shaping, we approach each job with attention to detail and a commitment to excellence.--}}
-
-                                    {{--                                        Our aim is simple: to not only meet your expectations but to surpass them. We understand the importance of a well-maintained outdoor space, and we take pride in our ability to transform lawns and hedges into beautiful, polished features of your property.--}}
-
-                                    {{--                                        When you choose J&J, you're choosing a team of professionals dedicated to delivering exceptional results. From our initial consultation to the completion of the project, we prioritize clear communication, reliable service, and your complete satisfaction.--}}
-
-                                    {{--                                        Experience the difference that three decades of expertise can make. Contact us today for all your lawn and hedge trimming needs.--}}
-                                    </p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -115,8 +88,6 @@
                                             your outdoor oasis thrives year-round.
                                         </li>
                                     </ol>
-
-
                                     </p>
                                     <div id="carouselExampleFade" class="carousel slide carousel-fade"
                                          data-bs-ride="carousel">
@@ -150,7 +121,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -179,7 +149,8 @@
                                         By clicking on the link you will find where our office is located.
                                         You can also fill out the form and we will call you back at a time convenient
                                         for you.</br>
-                                        <a class="btn btn-lg btn-success mt-3" href="{{route('contact-us')}}" role="button">Continue</a>
+                                        <a class="btn btn-lg btn-success mt-3" href="{{route('contact-us')}}"
+                                           role="button">Continue</a>
                                     </p>
                                 </div>
                             </div>
@@ -210,7 +181,8 @@
                                             class="img-thumbnail float-end  ms-3 my-3 shadow-lg" alt="...">
                                     <figure>
                                         <blockquote class="blockquote">
-                                            <p>"Absolutely thrilled with the lawn trimming service provided by J&J. Their attention to detail is unmatched, and my yard has never
+                                            <p>"Absolutely thrilled with the lawn trimming service provided by J&J.
+                                                Their attention to detail is unmatched, and my yard has never
                                                 looked better. Highly recommend their expertise to anyone seeking
                                                 top-notch lawn care!"</p>
                                         </blockquote>
@@ -225,7 +197,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>

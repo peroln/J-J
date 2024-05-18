@@ -1,36 +1,25 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Protest+Revolution&display=swap"
-          rel="stylesheet">
-
-    <!-- Scripts -->
+@section('scripts')
     @vite(['resources/sass/video.scss', 'resources/js/app.js'])
-</head>
-<body>
-<div id="app">
-    @include("layouts.menu-test")
-    {{--    <div class="video-background">--}}
+    <script>
+        window.onload = function () {
+            var polaroids = document.querySelectorAll('.polaroid');
+            polaroids.forEach(item => {
+                const randomRotation = Math.floor(Math.random() * (6 - -6 + 1) + -6);
+                item.style.transform = `rotate(${randomRotation}deg)`
+            })
+        };
+    </script>
+@endsection
+
+@section('content')
     <div class="video-wrap fixed-top z-0 video-screen">
         <div class="ratio ratio-16x9">
             <video autoplay loop muted playsinline src="{{asset('/video/main.mp4')}}" type="video/mp4">
             </video>
         </div>
     </div>
-    {{--    </div>--}}
-
     <div class="caption">
         <div class="container-fluid p-0 position-relative">
             <div class="top-left d-flex flex-row bd-highlight"><h1 class="p3">When the grass gets growing </br> we get
@@ -40,7 +29,6 @@
             </div>
         </div>
     </div>
-
     <div class="main-content z-1">
         <div class="container-fluid">
             <div class="container__items">
@@ -147,14 +135,5 @@
             </div>
         </div>
     </div>
-    @include("layouts.footer")
-</div>
-</body>
-<script>
-    var polaroids = document.querySelectorAll('.polaroid');
-    polaroids.forEach(item => {
-        const randomRotation = Math.floor(Math.random() * (6 - -6 + 1) + -6);
-        item.style.transform = `rotate(${randomRotation}deg)`
-    })
-</script>
-</html>
+@endsection
+
