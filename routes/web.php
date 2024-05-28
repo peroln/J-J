@@ -25,5 +25,10 @@ Route::get('/services', function () {
 
 Auth::routes();
 
-Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('admin');
-Route::post('/message', [RequestCallController::class, 'store'])->name('message');
+
+Route::post('/message', [RequestCallController::class, 'message'])->name('message');
+
+Route::prefix('admin')->middleware(['auth'])->group(function (){
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('admin');
+    Route::get('request-call/{requestCall}', [RequestCallController::class, 'show'])->name('request-call.show');
+});

@@ -31,6 +31,15 @@ class RequestCallController extends Controller
      */
     public function store(StoreMessageRequest $request)
     {
+
+    }
+
+    /**
+     * @param StoreMessageRequest $request
+     * @return \Illuminate\Http\RedirectResponse|string
+     */
+    public function message(StoreMessageRequest $request): \Illuminate\Http\RedirectResponse|string
+    {
         try {
             $requestCall = RequestCall::create($request->all());
         } catch (Exception $exception) {
@@ -43,9 +52,9 @@ class RequestCallController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(RequestCall $requestCall)
+    public function show(RequestCall $requestCall): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
     {
-        //
+        return view('request-calls.show', ['requestCall' => $requestCall ]);
     }
 
     /**
