@@ -31,4 +31,7 @@ Route::post('/message', [RequestCallController::class, 'message'])->name('messag
 Route::prefix('admin')->middleware(['auth'])->group(function (){
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('admin');
     Route::get('request-call/{requestCall}', [RequestCallController::class, 'show'])->name('request-call.show');
+    Route::get('request-call/{requestCall}/edit', [RequestCallController::class, 'edit'])->name('request-call.edit');
+    Route::put('request-call/{requestCall}/update', [RequestCallController::class, 'update'])->name('request-call.update');
+    Route::delete('request-call/{requestCall}/destroy', [RequestCallController::class, 'destroy'])->name('request-call.destroy');
 });
