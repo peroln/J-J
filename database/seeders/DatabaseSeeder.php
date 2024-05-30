@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\RequestCall;
+use App\Models\Review;
+use Database\Factories\ReviewFactory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
@@ -25,5 +27,6 @@ class DatabaseSeeder extends Seeder
             'remember_token' => Str::random(10),
         ]);
         RequestCall::factory(50)->create();
+        Review::factory(15)->create();
     }
 }

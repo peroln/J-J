@@ -33,21 +33,7 @@
                                 </h1>
                                 <div id="panels1-collapseOne" class="accordion-collapse collapse "
                                      aria-labelledby="panels1-headingOne">
-                                    <p class="accordion-body text-white pt-0 px-0">
-                                        <img src="{{asset('images/WhyChooseUs.jpg')}}"
-                                             class="img-thumbnail float-start me-2 me-md-3 my-2 my-md-3 first-block-img w-50"
-                                             alt="...">
-                                        With over 30 years of experience in lawn and hedge trimming, we bring
-                                        unparalleled expertise to every job. Our commitment to value, service, customer
-                                        care, and reliability is unmatched. We strive not only to meet but exceed your
-                                        expectations. Trust us to transform your outdoor space with precision and
-                                        professionalism.
-                                        When you choose J&J, you're choosing a team of professionals dedicated to
-                                        delivering exceptional results. From our initial consultation to the completion
-                                        of the project, we prioritize clear communication, reliable service, and your
-                                        complete satisfaction.
-                                        Contact us today for all your lawn and hedge trimming needs.
-                                    </p>
+                                    @include('welcome.choose-us')
                                 </div>
                             </div>
                         </div>
@@ -72,53 +58,7 @@
                                 </h1>
                                 <div id="panels2-collapseOne" class="accordion-collapse collapse"
                                      aria-labelledby="panels2-headingOne">
-                                    <p class="accordion-body text-white pt-0 px-0">
-                                        Our expertise
-                                        extends to meticulous hedge shaping, crafting elegant and tidy hedges that
-                                        enhance the beauty of your landscape.
-                                    <ol>
-                                        <li>Lawn Trimming: Achieving pristine lawns through precise cuts and meticulous
-                                            care, enhancing the beauty of your outdoor space.
-                                        </li>
-                                        <li>Hedge Shaping: Crafting beautifully manicured hedges that complement your
-                                            landscape, creating a polished and inviting atmosphere.
-                                        </li>
-                                        <li> Gardening Services: Providing comprehensive gardening solutions tailored to
-                                            your needs, from planting and maintenance to landscaping design, ensuring
-                                            your outdoor oasis thrives year-round.
-                                        </li>
-                                    </ol>
-                                    </p>
-                                    <div id="carouselExampleFade" class="carousel slide carousel-fade"
-                                         data-bs-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img
-                                                    src="https://media.istockphoto.com/id/1347784849/photo/scenic-view-of-a-beautiful-landscape-garden-with-a-green-mowed-lawn.webp?b=1&s=612x612&w=0&k=20&c=NXYgs2-QGp5HMxVdi2mrR-1AcNvteyVAPa4638lZSpI="
-                                                    class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img
-                                                    src="https://www.skh.com/wp-content/uploads/2020/07/image2-e1597082437309-800x500.jpg"
-                                                    class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img
-                                                    src="https://i0.wp.com/www.bigtoolbox.com/wp-content/uploads/2018/09/Green_grass_lawn.jpg"
-                                                    class="d-block w-100" alt="...">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
+                                    @include('welcome.what-we-do')
                                 </div>
                             </div>
                         </div>
@@ -142,16 +82,7 @@
                                 </h1>
                                 <div id="panels3-collapseOne" class="accordion-collapse collapse"
                                      aria-labelledby="panels3-headingOne">
-                                    <p class="accordion-body text-white pt-0 px-0">
-                                        <img
-                                            src="https://as2.ftcdn.net/v2/jpg/03/11/52/79/1000_F_311527981_cpzTxjBwgu3Z8q7GzPAA4oxkp3R9YwU0.jpg"
-                                            class="rounded-circle float-end m-sm-3 call-img" alt="...">
-                                        By clicking on the link you will find where our office is located.
-                                        You can also fill out the form and we will call you back at a time convenient
-                                        for you.</br>
-                                        <a class="btn btn-lg btn-success mt-3" href="{{route('contact-us')}}"
-                                           role="button">Continue</a>
-                                    </p>
+                                    @include('welcome.contact-us')
                                 </div>
                             </div>
                         </div>
@@ -173,24 +104,9 @@
                                         <p class="text-white">Here's what our clients say:</p>
                                     </button>
                                 </h1>
-                                <div id="panels4-collapseOne" class="accordion-collapse collapse"
+                                <div id="panels4-collapseOne" class="accordion-collapse collapse pt-5"
                                      aria-labelledby="panels4-headingOne">
-                                    <p class="accordion-body text-white pt-0 px-0">
-                                        <img
-                                            src="https://media.istockphoto.com/id/1347784849/photo/scenic-view-of-a-beautiful-landscape-garden-with-a-green-mowed-lawn.webp?b=1&s=612x612&w=0&k=20&c=NXYgs2-QGp5HMxVdi2mrR-1AcNvteyVAPa4638lZSpI="
-                                            class="img-thumbnail float-end  ms-3 my-3 shadow-lg" alt="...">
-                                    <figure>
-                                        <blockquote class="blockquote">
-                                            <p>"Absolutely thrilled with the lawn trimming service provided by J&J.
-                                                Their attention to detail is unmatched, and my yard has never
-                                                looked better. Highly recommend their expertise to anyone seeking
-                                                top-notch lawn care!"</p>
-                                        </blockquote>
-                                        <figcaption class="blockquote-footer text-end">
-                                            client <cite title="Source Title">Oleh Peretiatko</cite>
-                                        </figcaption>
-                                    </figure>
-                                    </p>
+                                    @include('welcome.reviews')
                                 </div>
                             </div>
                         </div>
@@ -199,7 +115,6 @@
             </div>
         </div>
     </div>
-</div>
 @include("layouts.footer")
 </body>
 </html>
