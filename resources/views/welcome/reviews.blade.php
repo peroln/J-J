@@ -33,11 +33,11 @@
         @endif
 
             <p class="accordion-body text-white pt-0 px-0">
-                 <img src="{{$review->src}}" class="img-thumbnail float-end  ms-3 my-3 shadow-lg"
+                 <img src="{{asset('storage/'.$review->src)}}" class="img-thumbnail float-end  ms-3 my-3 shadow-lg"
                    alt="{{$review->alt}}">
                  <figure>
                         <blockquote class="blockquote">
-                             <p>{{$review->text}}</p>
+                             <p>"{{$review->text}}"</p>
                         </blockquote>
                         <figcaption class="blockquote-footer text-end">
                             client

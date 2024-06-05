@@ -1,7 +1,8 @@
 @extends('layouts.admin')
 @section('content')
     <div class="container bg-white py-3">
-        <form action="{{route('request-call.update', [$requestCall])}}" method="post" class="needs-validation"
+        @include('error')
+        <form action="{{route('request-call.update', [$requestCall->id])}}" method="post" class="needs-validation"
               novalidate>
             @method('PUT')
             @csrf

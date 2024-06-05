@@ -8,33 +8,26 @@
                 <div class="d-flex align-items-start">
                     <div class="nav flex-column nav-pills me-3 px-5" id="v-pills-tab" role="tablist"
                          aria-orientation="vertical">
-                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                                aria-selected="true">Request Calls
+                        <button class="nav-link active" id="v-pills-reviews-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-reviews" type="button" role="tab"
+                                aria-controls="v-pills-reviews" aria-selected="true">Reviews
                         </button>
-                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-profile" type="button" role="tab"
-                                aria-controls="v-pills-profile" aria-selected="false">Profile
-                        </button>
-                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-messages" type="button" role="tab"
-                                aria-controls="v-pills-messages" aria-selected="false">Messages
-                        </button>
-                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-settings" type="button" role="tab"
-                                aria-controls="v-pills-settings" aria-selected="false">Settings
+                        <button class="nav-link " id="v-pills-request-calls-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-request-calls" type="button" role="tab" aria-controls="v-pills-request-calls"
+                                aria-selected="false">Request Calls
                         </button>
                     </div>
                     <div class="tab-content " id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                             aria-labelledby="v-pills-home-tab">
+                        <div class="tab-pane show active" id="v-pills-reviews" role="tabpanel"
+                             aria-labelledby="v-pills-reviews-tab">
+                            @include('reviews-table')
+                        </div>
+                        <div class="tab-pane fade fade" id="v-pills-request-calls" role="tabpanel"
+                             aria-labelledby="v-pills-request-calls-tab">
                             @include('request-calls-table')
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.</div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.</div>
-                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.</div>
                 </div>
             </div>
-    </div>
-</div>
+        </div>
 @endsection
