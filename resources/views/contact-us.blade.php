@@ -15,8 +15,8 @@
             <div class="card-map">
                 <div class="card-body ps-md-5">
                     <h1 class="card-title">Our address</h1>
-                    <h3 class="card-text">Lios Mor apt/14 </br> Newport</br>
-                        Co.Mayo<br/> F28YP78
+                    <h3 class="card-text">Ballinvoash</br> Breaffy</br>
+                        Co.Mayo<br/> F23F303
                     </h3>
                     <div class="d-grid col-6 mx-auto">
                         <button type="button" class="btn btn-primary w-50  mb-3 mt-3" data-bs-toggle="modal"
@@ -73,7 +73,7 @@
                     </div>
                     <div>
                         <iframe class="img-thumbnail google-map"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9406.189275593606!2d-9.5571608184024!3d53.88647530613031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48596f8cb5512909%3A0xede3d6dded5710b5!2z0J3RjNGO0L_QvtGA0YIsIENvLiDQnNCw0LnQviwgRjI4IFlQNzg!5e0!3m2!1sru!2sie!4v1714062401693!5m2!1sru!2sie"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5016.332973278824!2d-9.218921194536335!3d53.85627840620009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48595c639fad63df%3A0xb95c50c45e6308e1!2z0JHQsNC70LvQuNC90LLQvtGN0YgsIENvLiDQnNCw0LnQviwgRjIzIEYzMDM!5e0!3m2!1sru!2sie!4v1717602672366!5m2!1sru!2sie"
                                 allowfullscreen="yes" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
