@@ -299,7 +299,7 @@ body {
         }
 
         img {
-            width: 3vw;
+            width: 8vw;
         }
     }
 
@@ -451,11 +451,7 @@ body {
             text-align: left;
         }
     }
-    .navbar-brand {
-        img {
-            width: 3vw;
-        }
-    }
+
     .first-wrap, .third-wrap, .fourth-wrap {
         img {
             width: 45%;
@@ -483,4 +479,12 @@ body {
         margin-bottom: 13vh;
     }
 }
-
+@include media-breakpoint-down(sm) {
+    .navbar{
+        .navbar-brand {
+            img {
+                width: 16vw;
+            }
+        }
+    }
+}

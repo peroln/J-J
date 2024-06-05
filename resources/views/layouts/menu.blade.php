@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-md gradient-custom fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand ms-md-5 mt-md-3" href="/">
-            <img src="{{asset('/images/lawnmower.png')}}" alt="J&J" class="mx-auto">
-            J<span class="middle-letter">&</span>J
-            <p>English Gardener</p>
+        <a class="navbar-brand ms-md-5" href="/">
+            <img src="{{asset('/images/logo.png')}}" alt="J&J" class="mx-auto">
+{{--            J<span class="middle-letter">&</span>J--}}
+{{--            <p>English Gardener</p>--}}
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
