@@ -2,20 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\RequestCall;
-use Illuminate\Http\Request;
+
+use App\Models\Review;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+
 
     /**
      * Show the application dashboard.
@@ -24,7 +16,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $request_calls = RequestCall::simplePaginate(15);
-        return view('home', ['request_calls' =>$request_calls]);
+        $reviews = Review::all()->where('publish', true);
+//        dd($reviews);
+        return view('welcome', ['reviews' => $reviews]);
     }
 }

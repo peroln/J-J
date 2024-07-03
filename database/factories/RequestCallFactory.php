@@ -18,9 +18,9 @@ class RequestCallFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->name,
+            'name' => fake()->name(),
             'phone_number' => rand(100000000, 999999999),
-            'text' => $this->faker->text(255),
+            'text' => fake()->text(255),
         ];
     }
 }

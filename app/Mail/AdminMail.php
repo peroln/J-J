@@ -19,7 +19,7 @@ public string $logo, $sender;
      */
     public function __construct(public RequestCall $requestCall)
     {
-        $this->logo ='/images/lawnmower.png';
+        $this->logo ='/images/logo.png';
         $this->sender = config('mail.to.name');
     }
 

@@ -54,30 +54,41 @@ class RequestCallController extends Controller
      */
     public function show(RequestCall $requestCall): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
     {
-        return view('request-calls.show', ['requestCall' => $requestCall ]);
+        return view('request-calls.show', ['requestCall' => $requestCall]);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(RequestCall $requestCall)
+    public function edit(RequestCall $requestCall): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
     {
-        //
+        return view('request-calls.edit', ['requestCall' => $requestCall]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, RequestCall $requestCall)
+    public function update(StoreMessageRequest $request, RequestCall $requestCall): \Illuminate\Http\RedirectResponse
     {
-        //
+        $requestCall->fill($request->all());
+        try {
+            $requestCall->save();
+        } catch (Exception $e) {
+            return back();
+        }
+        return redirect()->route('admin');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(RequestCall $requestCall)
+    public function destroy(RequestCall $requestCall): \Illuminate\Http\RedirectResponse
     {
-        //
+        try {
+            $requestCall->delete();
+        } catch (Exception $e) {
+            return back();
+        }
+        return redirect()->route('admin');
     }
 }
