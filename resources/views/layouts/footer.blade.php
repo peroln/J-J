@@ -4,7 +4,7 @@
         <div class="ms-auto">
             <address class="address">
                 Ballinvoash, Breaffy, Co.Mayo Ireland, F23F303<br>
-                Phone: +353-(87) 744-5765<br>
+                Phone: +353-(87) 345-1765<br>
                 Email: jonandjaneballinvoash@gmail.com
             </address>
         </div>
