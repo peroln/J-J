@@ -7,7 +7,6 @@
         <th scope="col">Text</th>
         <th scope="col">Created at</th>
         <th scope="col"></th>
-        <th scope="col"></th>
     </tr>
     </thead>
     <tbody>
@@ -18,8 +17,7 @@
             <td>{{$call->phone_number}}</td>
             <td>{{\Illuminate\Support\Str::limit($call->text,100)}}</td>
             <td>{{$call->created_at}}</td>
-            <td><a href="{{route('request-call.show', ['requestCall' => $call->id])}}" class="btn btn-success" role="button" aria-pressed="true">View</a></td>
-            <td><a href="{{route('request-call.edit', ['requestCall' => $call->id])}}" class="btn btn-warning" role="button" aria-pressed="true">Edit</a></td>
+            <td><a href="{{route('request-call.show', ['requestCall' => $call->id])}}" class="btn btn-info" role="button" aria-pressed="true">View</a></td>
         </tr>
     @endforeach
     </tbody>

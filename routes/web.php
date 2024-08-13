@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{AdminController,RequestCallController,HomeController, ReviewController};
+use App\Http\Controllers\{AdminController,RequestCallController,HomeController, ReviewController, UserController};
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,4 +40,11 @@ Route::prefix('admin')->middleware(['auth'])->group(function (){
     Route::put('review/{review}/update', [ReviewController::class, 'update'])->name('review.update');
     Route::post('review/store', [ReviewController::class, 'store'])->name('review.store');
     Route::delete('review/{review}/destroy', [ReviewController::class, 'destroy'])->name('review.destroy');
+
+    Route::get('user/create', [UserController::class, 'create'])->name('user.create');
+    Route::get('user/{user}', [UserController::class, 'show'])->name('user.show');
+    Route::get('user/{user}/edit', [UserController::class, 'edit'])->name('user.edit');
+    Route::put('user/{user}/update', [UserController::class, 'update'])->name('user.update');
+    Route::post('user/store', [UserController::class, 'store'])->name('user.store');
+    Route::delete('user/{user}/destroy', [UserController::class, 'destroy'])->name('user.destroy');
 });
