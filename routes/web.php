@@ -26,7 +26,7 @@ Auth::routes();
 
 Route::post('/message', [RequestCallController::class, 'message'])->name('message');
 
-Route::prefix('admin')->middleware(['auth'])->group(function (){
+Route::prefix('admin')->middleware(['admin'])->group(function (){
     Route::get('/', [AdminController::class, 'index'])->name('admin');
 
     Route::get('request-call/{requestCall}', [RequestCallController::class, 'show'])->name('request-call.show');
