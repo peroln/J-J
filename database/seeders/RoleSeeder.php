@@ -26,6 +26,7 @@ class RoleSeeder extends Seeder
                 [
                     'user_id' => DB::table('roles')->where(['name' => 'admin'])->value('id'),
                     'role_id' => DB::table('users')->where(['name' => env('OWNER_NAME','Oleh')])->value('id'),
+                    'created_at' => now(),
                 ]
             ]
         );
