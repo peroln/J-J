@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
 
         User::factory()->create([
-            'name' => 'Oleh',
+            'name' => env('OWNER_NAME', 'Oleh'),
             'email' => 'peretjatkool@gmail.com',
             'password' => Hash::make('password'),
             'email_verified_at' => now(),
@@ -44,6 +44,9 @@ class DatabaseSeeder extends Seeder
                 'created_at' => now()
             ]
 
+        ]);
+        $this->call([
+            RoleSeeder::class,
         ]);
     }
 }
