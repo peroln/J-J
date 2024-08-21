@@ -21,9 +21,9 @@
                     <li class="nav-item p-xl-3 p-xxl-5">
                         <a class="nav-link" aria-current="page" href="{{route('home')}}">Home</a>
                     </li>
-                    <li class="nav-item p-xl-3 p-xxl-5">
+                    {{--<li class="nav-item p-xl-3 p-xxl-5">
                         <a class="nav-link" href="#">About us</a>
-                    </li>
+                    </li>--}}
                     <li class="nav-item p-xl-3 p-xxl-5">
                         <a class="nav-link" href="{{route('services')}}">Services</a>
                     </li>
